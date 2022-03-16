@@ -1,25 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Introtext() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div className="introtext">Budget Tracker 9000!</div>
+  )
+};
+
+function BudgetTable(){
+  return (
+  <div className='btable'>
+    <div id='orgheader' className='tableheader'><strong>Organization</strong></div>
+    <div id='amountheader' className='tableheader'><strong>Amount</strong></div>
+    <div id='dateheader' className='tableheader'><strong>Date</strong></div>
+    <div id='bankheader' className='tableheader'><strong>Bank Total</strong></div>
+  </div>
+  )
 }
 
-export default App;
+function Console() {
+    console.log('This is a thing')
+}
+
+function addamt(){
+  
+}
+
+export {
+  Introtext,
+  BudgetTable,
+  Console
+}
