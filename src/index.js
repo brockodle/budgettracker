@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Introtext, Console, BudgetTable, Addrow } from './App';
+import { Introtext, Console, BudgetTable, Addrowbtn, Userrow } from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <>
     <Introtext />
     <BudgetTable />
+    <Userrow />
+    <Addrowbtn />
     {Console()}
   </>,
   document.getElementById('root')
