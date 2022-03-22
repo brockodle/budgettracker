@@ -3755,6 +3755,8 @@ __metadata:
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@testing-library/user-event": ^13.2.1
+    jquery: ^3.6.0
+    node: ^17.7.1
     react: ^17.0.2
     react-dom: ^17.0.2
     react-scripts: 5.0.0
@@ -7507,6 +7509,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jquery@npm:^3.6.0":
+  version: 3.6.0
+  resolution: "jquery@npm:3.6.0"
+  checksum: 8fd5fef4aa48fd374ec716dd1c1df1af407814a228e15c1260ca140de3a697c2a77c30c54ff1d238b6a3ab4ddc445ddeef9adce6c6d28e4869d85eb9d3951c0e
+  languageName: node
+  linkType: hard
+
 "js-tokens@npm:^3.0.0 || ^4.0.0, js-tokens@npm:^4.0.0":
   version: 4.0.0
   resolution: "js-tokens@npm:4.0.0"
@@ -8306,6 +8315,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"node-bin-setup@npm:^1.0.0":
+  version: 1.1.0
+  resolution: "node-bin-setup@npm:1.1.0"
+  checksum: 15d64487257e282e8878cee35742f43a54e99d6b5dad5b3c84cf4881705c1ee98a962e25ac56427ff72edd1d223cbd6918325e7e6ca7c7d086e7fbde3b97c335
+  languageName: node
+  linkType: hard
+
 "node-forge@npm:^1.2.0":
   version: 1.2.1
   resolution: "node-forge@npm:1.2.1"
@@ -8344,6 +8360,17 @@ __metadata:
   version: 2.0.2
   resolution: "node-releases@npm:2.0.2"
   checksum: da858bf86b4d512842379749f5a5e4196ddab05ba18ffcf29f05bf460beceaca927f070f4430bb5046efec18941ddbc85e4c5fdbb83afc28a38dd6069a2f255e
+  languageName: node
+  linkType: hard
+
+"node@npm:^17.7.1":
+  version: 17.7.1
+  resolution: "node@npm:17.7.1"
+  dependencies:
+    node-bin-setup: ^1.0.0
+  bin:
+    node: bin/node
+  checksum: 704ec5b56969c7f0928ea6e15df4106dc1965647e9b8f441289f0749adb55e542ca4165694bea64107347978c55fb56c52bbbf82aaa0d52bc3a2fd9ddfe5c48a
   languageName: node
   linkType: hard
 

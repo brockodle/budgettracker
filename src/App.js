@@ -1,12 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import $ from 'jquery';
 
 let rowct = 0;
-let orgdiv = document.getElementById('orgin'+rowct);
-let amtdiv = document.getElementById('amtin'+rowct);
-let datediv = document.getElementById('datein'+rowct);
-let totaldiv = document.getElementById('totalin'+rowct);
 
 function Introtext() {
   return (
@@ -26,7 +23,26 @@ function BudgetTable() {
   )
 }
 
+function Addnewrow() {
+
+  let orgdiv = document.getElementById('orgin'+rowct);
+  let amtdiv = document.getElementById('amtin'+rowct);
+  let datediv = document.getElementById('datein'+rowct);
+  let totaldiv = document.getElementById('totalin'+rowct);
+
+  return (
+    <React.Fragment>
+      <div className='tableitem'><div id={$(orgdiv).attr('id')}>{orgdiv.value}</div></div>
+      <div className='tableitem'><div id={$(amtdiv).attr('id')}>{amtdiv.value}</div></div>
+      <div className='tableitem'><div id={$(datediv).attr('id')}>{datediv.value}</div></div>
+      <div className='tableitem'><div id={$(totaldiv).attr('id')}>{totaldiv.value}</div></div>
+    </React.Fragment>
+  ),
+  document.getElementById('btable')
+}
+
 function Userrow() {
+  
   return (
     <React.Fragment>
       <div className='tableitem'><input id={"orgin"+rowct} className="tabin" /></div>
@@ -37,26 +53,9 @@ function Userrow() {
   )
 }
 
-function Addnewrow() {
-
-  let orgdiv = document.getElementById('orgin'+rowct);
-  let amtdiv = document.getElementById('amtin'+rowct);
-  let datediv = document.getElementById('datein'+rowct);
-  let totaldiv = document.getElementById('totalin'+rowct);
-
-  return (
-    <React.Fragment>
-      <div className='tableitem'><div id={orgdiv.getAttribute('id')}>{orgdiv.value}</div></div>
-      <div className='tableitem'><div id={amtdiv.getAtrribute('id')}>{amtdiv.value}</div></div>
-      <div className='tableitem'><div id={datediv.getAtrribute('id')}>{datediv.value}</div></div>
-      <div className='tableitem'><div id={totaldiv.getAttribute('id')}>{totaldiv.value}</div></div>
-    </React.Fragment>
-  )
-}
-
 function Addrowbtn() {
   return (
-  <button id="addrow" onClick={Addnewrow()}>Add New Row</button>
+  <button id="addrow" >Add New Row</button>
   )
 }
 
